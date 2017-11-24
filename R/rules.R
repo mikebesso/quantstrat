@@ -1,3 +1,6 @@
+#' @include utils.R
+NULL
+
 #' add a rule to a strategy
 #' 
 #' Rules will be processed in a very particular manner, so it bears going over.

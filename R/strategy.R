@@ -146,7 +146,7 @@ applyStrategy <- function(strategy,
        pobj<-.getPortfolio(portfolio)
        symbols<- ls(pobj$symbols)
        sret<-new.env(hash=TRUE)
-       
+    
        for (symbol in symbols){
          if(isTRUE(load.mktdata)){
              if(isTRUE(initBySymbol)) initSymbol(strategy, symbol, ... = ...)

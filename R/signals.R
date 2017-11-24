@@ -1,3 +1,5 @@
+#' @include utils.R
+NULL
 
 #' add a signal to a strategy
 #' 
@@ -232,6 +234,10 @@ sigComparison <- function(label,data=mktdata, columns, relationship=c("gt","lt",
 #' @param offset2 numeric offset to be added to the second column prior to comparison
 #' @export
 sigCrossover <- function(label,data=mktdata, columns, relationship=c("gt","lt","eq","gte","lte"), offset1=0, offset2=0) {
+
+  # Making sure we have a valid relationship
+  relationship <- match.arg(relationship)
+
     ret_sig = FALSE
     lng<-length(columns)
     for (i in 1:(lng-1)) {

@@ -54,6 +54,7 @@ must.be.portfolio <- function(portfolio)
 
 modify.args <- function(formals, arglist, ..., dots=FALSE)
 {
+
     # avoid evaluating '...' to make things faster
     dots.names <- eval(substitute(alist(...)))
 

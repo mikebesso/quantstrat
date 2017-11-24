@@ -296,6 +296,8 @@ addOrder <- function(portfolio,
                      time.in.force=''
 )
 {
+  
+
     # get order book
     #orderbook <- getOrderBook(portfolio)
     #if(!length(grep(symbol,names(orderbook[[portfolio]])))==1) stop(paste("symbol",symbol,"does not exist in portfolio",portfolio,"having symbols",names(orderbook[[portfolio]])))
